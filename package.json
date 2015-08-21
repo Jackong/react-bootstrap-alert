@@ -1,0 +1,35 @@
+{
+  "name": "react-bootstrap-alert",
+  "version": "1.0.0",
+  "description": "alert dialog for react with bootstrap modal.",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel index.jsx --out-file index.js",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jackong/react-bootstrap-alert.git"
+  },
+  "keywords": [
+    "alert",
+    "dialog",
+    "react",
+    "bootstrap"
+  ],
+  "author": "jackong <jackongc@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jackong/react-bootstrap-alert/issues"
+  },
+  "homepage": "https://github.com/Jackong/react-bootstrap-alert",
+  "dependencies": {
+    "alt": "^0.17.1",
+    "react": "^0.13.3",
+    "react-bootstrap": "^0.24.5"
+  },
+  "devDependencies": {
+    "babel": "^5.8.21"
+  }
+}
