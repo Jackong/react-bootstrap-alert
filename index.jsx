@@ -1,21 +1,13 @@
 import React, {PropTypes} from 'react'
 import {Modal, Button} from 'react-bootstrap'
+import Alt from 'alt'
+import mixin from 'es6-react-mixins'
+import connect from 'alt-connect'
+
 import Actions from './actions'
 import Store from './store'
 
-class Alert extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = Store.getState()
-    }
-    componentWillMount() {
-        super.componentWillMount()
-        this.unlisten = Store.listen(this.setState.bind(this))
-    }
-    componentWillUnmount() {
-        super.componentWillUnmount()
-        this.unlisten()
-    }
+class Alert extends mixin(connect(Store)) {
     hide() {
         Actions.hide()
     }

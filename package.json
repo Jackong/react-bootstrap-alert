@@ -1,11 +1,10 @@
 {
   "name": "react-bootstrap-alert",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "alert dialog for react with bootstrap modal.",
   "main": "index.js",
   "scripts": {
-    "build": "babel index.jsx --out-file index.js",
-    "prepublish": "npm run build",
+    "prepublish": "gulp webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,10 +25,10 @@
   "homepage": "https://github.com/Jackong/react-bootstrap-alert",
   "dependencies": {
     "alt": "^0.17.1",
+    "alt-connect": "^1.0.0",
+    "es6-react-mixins": "^0.1.8",
     "react": "^0.13.3",
     "react-bootstrap": "^0.24.5"
   },
-  "devDependencies": {
-    "babel": "^5.8.21"
-  }
+  "devDependencies": {}
 }
