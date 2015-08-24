@@ -37,4 +37,9 @@ class Component extends mixin(connect(Store)) {
     }
 }
 
+Component.propTypes = {
+    title: PropTypes.string,
+    ok: PropTypes.string
+}
+
 export default Component;

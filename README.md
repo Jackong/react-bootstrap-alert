@@ -26,7 +26,10 @@ class Children extends React.Component {
         Alert.Actions
         .show('something error')
         .then(() => {
-            //when user click the ok button
+            //after ok
+        })
+        .catch(() => {
+            //after cancel
         })
     }
     render () {

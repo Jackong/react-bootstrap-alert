@@ -1,6 +1,6 @@
 {
   "name": "react-bootstrap-alert",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "alert dialog for react with bootstrap modal.",
   "main": "index.js",
   "scripts": {
