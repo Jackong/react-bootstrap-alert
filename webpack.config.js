@@ -1,8 +1,5 @@
+var webpack = require('webpack')
 module.exports = {
-    context: __dirname,
-    entry: {
-        index: './index.jsx'
-    },
     output: {
         library: 'ReactBootstrapAlert',
         libraryTarget: 'umd',
@@ -10,13 +7,13 @@ module.exports = {
         chunkFilename: 'index.js'
     },
 
-    externals: {
-        react: 'react',
-        'react-bootstrap': 'react-bootstrap',
-        alt: 'alt',
-        'es6-react-mixins': 'es6-react-mixins',
-        'alt-connect': 'alt-connect'
-    },
+    externals: [
+        'react',
+        'react-bootstrap',
+        'alt',
+        'alt-connect',
+        'es6-react-mixins'
+    ],
 
     module: {
         loaders: [{
@@ -30,5 +27,12 @@ module.exports = {
     },
     node: {
         Buffer: false
-    }
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            compressor: {
+                warnings: false
+            }
+        })
+    ]
 };
