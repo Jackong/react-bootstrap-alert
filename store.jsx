@@ -1,7 +1,7 @@
 import alt from './alt'
 import Actions from './actions'
 
-class Alert {
+class Store {
     constructor() {
         this.message = null
         this.resolve = null
@@ -13,11 +13,14 @@ class Alert {
         this.resolve = data.resolve
         this.reject = data.reject
     }
+    onOk() {
+        this.message = null
+        this.resolve()
+    }
     onHide() {
         this.message = null
-        this.resolve = null
-        this.reject = null
+        this.reject()
     }
 }
 
-export default alt.createStore(Alert)
+export default alt.createStore(Store)

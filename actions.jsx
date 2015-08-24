@@ -6,6 +6,9 @@ class Actions {
             this.dispatch({message: message, resolve: resolve, reject: reject});
         });
     }
+    ok() {
+        this.dispatch()
+    }
     hide() {
         this.dispatch();
     }
