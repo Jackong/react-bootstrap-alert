@@ -14,7 +14,7 @@ class App extends React.Component {
     render () {
         return (
             <div>
-                <Alert ref='alert' title='Tips' ok='OK' />
+                <Alert.Component ref='alert' title='Tips' ok='OK' />
                 <Children/>
             </div>
         )
