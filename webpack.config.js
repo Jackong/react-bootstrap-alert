@@ -4,44 +4,19 @@ module.exports = {
         index: './index.jsx'
     },
     output: {
-            filename: 'index.js',
-            chunkFilename: 'index.js'
+        library: 'ReactBootstrapAlert',
+        libraryTarget: 'umd',
+        filename: 'index.js',
+        chunkFilename: 'index.js'
     },
 
-    externals: [{
-        'react': {
-            root: 'React',
-            commonjs2: 'react',
-            commonjs: 'react',
-            amd: 'react'
-        }
-    }, {
-        'react-bootstrap': {
-            root: 'ReactBootstrap',
-            commonjs2: 'react-bootstrap',
-            commonjs: 'react-bootstrap',
-            amd: 'react-bootstrap'
-        }
-    }, {
-        'alt': {
-            root: 'Alt',
-            commonjs2: 'alt',
-            commonjs: 'alt',
-            amd: 'alt'
-        }
-    }, {
-        'es6-react-mixins': {
-            commonjs2: 'es6-react-mixins',
-            commonjs: 'es6-react-mixins',
-            amd: 'es6-react-mixins'
-        }
-    }, {
-        'alt-connect': {
-            commonjs2: 'alt-connect',
-            commonjs: 'alt-connect',
-            amd: 'alt-connect'
-        }
-    }],
+    externals: {
+        react: 'react',
+        'react-bootstrap': 'react-bootstrap',
+        alt: 'alt',
+        'es6-react-mixins': 'es6-react-mixins',
+        'alt-connect': 'alt-connect'
+    },
 
     module: {
         loaders: [{

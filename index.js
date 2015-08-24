@@ -1,4 +1,14 @@
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("react"), require("react-bootstrap"), require("es6-react-mixins"), require("alt-connect"), require("alt"));
+	else if(typeof define === 'function' && define.amd)
+		define(["react", "react-bootstrap", "es6-react-mixins", "alt-connect", "alt"], factory);
+	else if(typeof exports === 'object')
+		exports["ReactBootstrapAlert"] = factory(require("react"), require("react-bootstrap"), require("es6-react-mixins"), require("alt-connect"), require("alt"));
+	else
+		root["ReactBootstrapAlert"] = factory(root["react"], root["react-bootstrap"], root["es6-react-mixins"], root["alt-connect"], root["alt"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_2__, __WEBPACK_EXTERNAL_MODULE_3__, __WEBPACK_EXTERNAL_MODULE_4__, __WEBPACK_EXTERNAL_MODULE_7__) {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 
@@ -66,19 +76,15 @@
 
 	var _reactBootstrap = __webpack_require__(2);
 
-	var _alt = __webpack_require__(3);
-
-	var _alt2 = _interopRequireDefault(_alt);
-
-	var _es6ReactMixins = __webpack_require__(4);
+	var _es6ReactMixins = __webpack_require__(3);
 
 	var _es6ReactMixins2 = _interopRequireDefault(_es6ReactMixins);
 
-	var _altConnect = __webpack_require__(5);
+	var _altConnect = __webpack_require__(4);
 
 	var _altConnect2 = _interopRequireDefault(_altConnect);
 
-	var _actions = __webpack_require__(6);
+	var _actions = __webpack_require__(5);
 
 	var _actions2 = _interopRequireDefault(_actions);
 
@@ -150,34 +156,28 @@
 /* 1 */
 /***/ function(module, exports) {
 
-	module.exports = undefined;
+	module.exports = __WEBPACK_EXTERNAL_MODULE_1__;
 
 /***/ },
 /* 2 */
 /***/ function(module, exports) {
 
-	module.exports = undefined;
+	module.exports = __WEBPACK_EXTERNAL_MODULE_2__;
 
 /***/ },
 /* 3 */
 /***/ function(module, exports) {
 
-	module.exports = undefined;
+	module.exports = __WEBPACK_EXTERNAL_MODULE_3__;
 
 /***/ },
 /* 4 */
 /***/ function(module, exports) {
 
-	module.exports = undefined;
+	module.exports = __WEBPACK_EXTERNAL_MODULE_4__;
 
 /***/ },
 /* 5 */
-/***/ function(module, exports) {
-
-	module.exports = undefined;
-
-/***/ },
-/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -192,7 +192,7 @@
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-	var _alt = __webpack_require__(7);
+	var _alt = __webpack_require__(6);
 
 	var _alt2 = _interopRequireDefault(_alt);
 
@@ -224,7 +224,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 7 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -235,7 +235,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _alt = __webpack_require__(3);
+	var _alt = __webpack_require__(7);
 
 	var _alt2 = _interopRequireDefault(_alt);
 
@@ -243,6 +243,12 @@
 
 	exports['default'] = alt;
 	module.exports = exports['default'];
+
+/***/ },
+/* 7 */
+/***/ function(module, exports) {
+
+	module.exports = __WEBPACK_EXTERNAL_MODULE_7__;
 
 /***/ },
 /* 8 */
@@ -260,11 +266,11 @@
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-	var _alt = __webpack_require__(7);
+	var _alt = __webpack_require__(6);
 
 	var _alt2 = _interopRequireDefault(_alt);
 
-	var _actions = __webpack_require__(6);
+	var _actions = __webpack_require__(5);
 
 	var _actions2 = _interopRequireDefault(_actions);
 
@@ -301,4 +307,6 @@
 	module.exports = exports['default'];
 
 /***/ }
-/******/ ]);
+/******/ ])
+});
+;

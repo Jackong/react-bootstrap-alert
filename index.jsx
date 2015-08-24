@@ -1,6 +1,5 @@
 import React, {PropTypes} from 'react'
 import {Modal, Button} from 'react-bootstrap'
-import Alt from 'alt'
 import mixin from 'es6-react-mixins'
 import connect from 'alt-connect'
 
